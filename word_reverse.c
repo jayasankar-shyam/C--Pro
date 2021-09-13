@@ -1,21 +1,29 @@
 /*Jayasankar Shyam
 S2 AD
 Roll No : 40*/
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+char reverse(char a[]);
 int main()
 {
-    int length,i;
-    char temp, a[100];
+    char a[100];
     printf("Enter the word :");
     gets(a);
-    length=strlen(a)-1;
-    for(i=0;i<=length/2;i++)
-    {
-        temp=a[i];
-        a[i]=a[length-i];
-        a[length-i]=temp;
-    }
-    printf("The reversed word is %s ",a);
+    reverse(a);
+    printf("\nThe reversed word is %s \n", a);
+
     return 0;
+}
+char reverse(char a[])
+{
+    int length, i;
+    char temp;
+    length = strlen(a) - 1;
+    for (i = 0; i <= length / 2; i++)
+    {
+        temp = a[i];
+        a[i] = a[length - i];
+        a[length - i] = temp;
+    }
+    return a;
 }
