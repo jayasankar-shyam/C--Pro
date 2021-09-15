@@ -13,7 +13,7 @@ struct date
 struct city
 {
     char name[30];
-    char city[20];
+    char state[20];
     char country[20];
 };
 struct address
