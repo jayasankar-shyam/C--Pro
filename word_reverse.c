@@ -11,7 +11,6 @@ int main()
     gets(a);
     reverse(a);
     printf("\nThe reversed word is %s \n", a);
-
     return 0;
 }
 char reverse(char a[])
@@ -25,5 +24,5 @@ char reverse(char a[])
         a[i] = a[length - i];
         a[length - i] = temp;
     }
-    return a;
+    //return a;
 }
