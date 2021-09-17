@@ -1,3 +1,6 @@
+/*JAYASANKAR SHYAM
+S2 AD
+Roll No:40*/
 struct time
 {
     int hours;
