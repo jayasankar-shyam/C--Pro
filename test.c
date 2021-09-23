@@ -1,21 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter 3 numbers : ");
-    scanf("%d %d %d",&a,&b,&c);
-    if(a>b)
+    int a, flag = 0, i;
+    printf("Enter a number : ");
+    scanf("%d", &a);
+    for (i = 2; i <= a / 2; i++)
     {
-        if(a>c)
-            printf("%d is the largest",a);
-        else
-            printf("%d is the largest",c);
+        if(a%i==0)
+        {
+            flag=1;
+            break;
+        }
     }
+    if(flag==1)
+        printf("\n%d is not a prime number\n",a);
     else
-    {
-        if(b>c)
-            printf("%d is the largest",b);
-        else
-            printf("%d is the largest",c);
+        printf("\n%d is a prime number\n",a);
+    return 0;
     }
-}
