@@ -24,5 +24,4 @@ char reverse(char a[])
         a[i] = a[length - i];
         a[length - i] = temp;
     }
-    //return a;
 }

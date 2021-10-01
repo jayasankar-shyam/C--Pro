@@ -6,7 +6,7 @@ void swap(int *a, int *b);
 int main()
 {
     //add
-    int a, b, *p, *q,sum;
+    int a, b, *p, *q, sum;
     printf("Enter the first number : ");
     scanf("%d", &a);
     printf("Enter the second number : ");
@@ -26,5 +26,4 @@ void swap(int *a, int *b)
     int temp = *a;
     *a = *b;
     *b = temp;
-
 }
