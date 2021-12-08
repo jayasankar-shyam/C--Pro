@@ -1,7 +1,3 @@
-/*Jayasankar Shyam
-S2 AD
-Roll No : 40*/
-
 #include <stdio.h>
 int main()
 {
